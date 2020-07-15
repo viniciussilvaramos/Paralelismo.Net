@@ -32,15 +32,19 @@ O conteúdo esta dividido da seguinte forma:
 ## O que significa desenvolvimento paralelo?
 
 De maneira bem simples, desenvolvimento paralelo é a utilização de mais de um núcleo do processador para a execução de uma determinada tarefa. 
-Desenvolver um software desta maneira é mais complexa pois o programador é responsável por manter a integridade da aplicação. 
+Desenvolver um software desta maneira é mais complexa pois o programador é responsável por manter a integridade da aplicação.
+
 Porém, se utilizada de maneira correta, as aplicações ganham velocidade, responsividade e podem reduzir a complexidade de uma solução distribuída. 
-Ex: em padrões mais recentes de desenvolvimento, uma maneira relativamente comum de ganhar agilidade em uma aplicação é a replicando em multiplos processos e colocando uma fila de mensageria para gerenciar a carga de trabalho. 
-Há várias vantagens neste tipo de abordagem, porém, uma grande desvatagem é a a dificuldade de apuração de erros e realização do debug neste tipo de ambinete distribuído. (O Erro que pode acontecer em um processor agora pode acontecer em N).
+Ex: em padrões mais recentes de desenvolvimento, uma maneira relativamente comum de ganhar agilidade em uma aplicação é a replicando em multiplos processos e colocando uma fila de mensageria para gerenciar a carga de trabalho.   
+
+Há várias vantagens neste tipo de abordagem, porém, uma grande desvatagem é a a dificuldade de apuração de erros e realização do debug neste tipo de ambinete distribuído. (O Erro que pode acontecer em um processor agora pode acontecer em N).  
+
 Utilizando os conceitos que apresento aqui, é possível desenvolver aplicações robustas, paralelas e quem são mais simples de debugar se comparado a um ambiente distribuído.
 
 ## O que são threads?
 
 Threads é a unidade básica que o Sistema Operacional utiliza para alocar o tempo do processador. Toda thread tem uma prioridade de agendamento e mantém um conjunto de estruturas internas referentes ao seu contexto, para o caso de ser pausada e após isto, ser resumida.
+
 Por padrão, toda aplicação C# (que é um processo) é iniciada com uma Thread, que também é chamada de Thread Primária (Primary Thread).
 
 Fonte: https://docs.microsoft.com/en-us/dotnet/standard/threading/threads-and-threading
@@ -63,7 +67,7 @@ Await tem a responsabilidade de trazer a execução assíncrona para o contexto 
 De forma bem simplificada, o async marca o método como assíncrono e o await aguarda a execução do método assíncrono.
 Async e Await são palavras reservadas no C#. 
 
-OBS: Colocar async na declaração do método não o torna assíncrono automaticamente. Se em seu corpo não houver uma Task ou um await indicando a espera da conclusão de outro método assíncrono, o método em questão executará de forma síncrona (isto, além dos warnings que o compilar irá gerar). 
+OBS: *Colocar async na declaração do método não o torna assíncrono automaticamente*. Se em seu corpo não houver um await indicando a espera da conclusão de outro método assíncrono, o método em questão executará de forma síncrona (isto, além dos warnings que o compilar irá gerar).
 
 # 2.Introdução a Bibliotecas
 
