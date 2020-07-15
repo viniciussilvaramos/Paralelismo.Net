@@ -120,14 +120,14 @@ https://docs.microsoft.com/pt-br/dotnet/standard/collections/thread-safe/
 # 4.Leitura recomendada
 
 Sobre conceitos gerais sobre paralelismo:\
-https://docs.microsoft.com/en-us/dotnet/standard/threading/threads-and-threading
+https://docs.microsoft.com/en-us/dotnet/standard/threading/threads-and-threading  
 https://docs.microsoft.com/pt-br/dotnet/standard/parallel-programming/
 
 Sobre o conceito de Producer-Consumer e profundidade no Dataflow:\
 https://docs.microsoft.com/pt-br/dotnet/standard/parallel-programming/dataflow-task-parallel-library
 
 Outras bibliotecas com Actor Pattern e arquitetura distribuída:\
-https://dotnet.github.io/orleans/
+https://dotnet.github.io/orleans/  
 https://petabridge.com/bootcamp/
 
 # 5.Considerações Finais
